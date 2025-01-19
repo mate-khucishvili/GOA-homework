@@ -31,7 +31,7 @@ else:
 #task- 4
 
 surname = input("Enter your surname: ")
-change = input("How would you like to change your surname: ")
+change = input("change your surname: ")
 
 if change == "upper":
     print(surname.upper())

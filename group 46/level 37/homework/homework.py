@@ -29,3 +29,29 @@ def array(string):
 
 #4
 
+def contamination(text, char):
+    if text == "" or char == "":  
+        return ""  
+    result = "" 
+    for i in text: 
+        result += char  
+    return result  
+
+#5
+
+def is_palindrome(s):
+    s = s.lower()
+    return s == s[::-1] 
+
+#6
+
+def obfuscate(email):
+    result_email = ""
+    for i in email:
+        if i == '@':
+            result_email += " [at] "
+        elif i == '.':
+            result_email += " [dot] "
+        else:
+            result_email += i
+    return result_email
